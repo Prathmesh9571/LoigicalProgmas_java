@@ -1,0 +1,58 @@
+//This Program contains The Hours Converting to minutes.Taking The input Of Hours From user
+import java.util.Scanner;
+class Hour_Conversion_Minutes
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner (System.in);
+    System.out.println("Enter a Hours Value to Conversion in Minutes :-");
+    int hours=sc.nextInt;
+    int Minutes=hours*60;
+    System.out.println("The Hours- "+hours+" Conversion Of Minutes is " +Minutes);
+  }
+}
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+//This Program contains The Hours Converting to Seconds.Taking The input Of Hours From user
+import java.util.Scanner;
+class Hour_Conversion_Seconds
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner (System.in);
+    System.out.println("Enter a Hours Value to Conversion in Seconds:-");
+    int hour=sc.nextInt;
+    int Seconds=hours*60*60;
+    System.out.println("The Hours- "+hour+" Conversion Of Seconds is " +Seconds);
+  }
+}
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+//This Program contains The Minutes Converting to Hours.Taking The input Of Minutes From user
+import java.util.Scanner;
+class Minutes_Conversion_Hour
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner (System.in);
+    System.out.println("Enter a Minutes Value to Conversion in Hours :-");
+    int Minutes=sc.nextInt();
+    int Hours0=Minutes/60;
+    System.out.println("The Minutes- "+Minutes+" Conversion Of Hours is " +Hours0);
+  }
+}
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+//This Program contains The Seconds Converting to Hours.Taking The input Of Seconds From user
+import java.util.Scanner;
+class Minutes_Conversion_Hour
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner (System.in);
+    System.out.println("Enter a Minutes Value to Conversion in Hours :-");
+    int seconds1=sc.nextInt();
+    int Hours0=seconds1/3600;
+    System.out.println("The seconds- "+seconds1+" Conversion Of Hours is " +Hours0);
+  }
+}
