@@ -1,0 +1,20 @@
+// WE HAVE TO CHECK THE USER GIVEN CHARACTER ARE VOWELS OR CONSONENT.
+class Vowels_Consonent
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter a Alphabet It is Must Be Lower Or Upper Case Check for Vowels || Consonet:- ");
+    System.out.println("Vowels are:-a,i,e,o,u||A,I,E,O,U (Consonent=All other are Consonent)");
+    char ch=sc.next().charAt(0);//(0)it Provides a Index Value If We Provide (1) it Gives a java.lang.StringIndexOutOfBoundsException.
+    if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+    {
+      System.out.println("The Given Alphabet Is a Vowel:- "+ch);
+    }
+    else
+    {
+      System.out.println("The Given Alphabet Is a Consonent:- "+ch);
+    }
+    
+  }
+}
