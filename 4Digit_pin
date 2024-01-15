@@ -1,0 +1,32 @@
+// Wap Check Pin And Its Attempt Basically Password Type...
+import java.util.*;
+class Atm_Pin
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    int pin=5599;
+    int attempt=0;
+    do
+    {
+      System.out.println("Enter the Pin:-");
+      int p=sc.nextInt();
+      if(p==pin)
+      {
+        System.out.println("!Congrats Login Success");
+      }
+      else
+      {
+        System.out.println("! Pin is Incoreect Please Enter a Valid Pin!");
+        attempt++;
+      }
+  }
+  while(attempt<4);
+  {
+    if(attempt==4)
+    {
+      System.out.println("!Maximum Attemp are reach");
+    }
+  }
+}
+}
