@@ -1,0 +1,16 @@
+// These Program are Design Specifically to Enter number And Find Its Multiplication Table.
+import java.util.*;
+public class Table_Multiplication 
+{
+	public static void main(String[]args) 
+  {
+	  Scanner a=new Scanner(System.in);
+		System.out.println("Enter a Number To Find Multiplication Table (ex-2 * 2= 4):-");
+		int num=a.nextInt(),start=1;
+		while(start<=10)
+		{
+		 System.out.println(num+ " * "+start+" = " +(num*start));
+		 start++;
+		}
+	}
+}
