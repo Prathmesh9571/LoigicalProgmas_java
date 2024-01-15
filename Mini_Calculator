@@ -1,0 +1,97 @@
+// Create a Class as a Calci And Add The Methods In them.
+class Calci 
+{
+	static int value=0;
+	  public void addition(int a) 
+	  {
+		  value+=a;
+	  }
+	  public void substraction(int a) 
+	  {
+		  value-=a;
+	  }
+	  public void multiplication(int a) 
+	  {
+		  value*=a;
+	  }
+	  public void division(int a) 
+	  {
+		  value/=a;
+	  }
+}
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// Note:- There are Two Diffrent Classes but working on same Application Calci class is contain (Operation On Calculator) And Calci_Application class will Exeute To Run The Calculator App Properties are inherit, Another class.
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// This is One Application Based On Simple Calculator
+import java.util.Scanner;
+class Calci_Application 
+{
+  /*Creating a Object using Modifer as Static Both the Classes.*/
+	static Calci a=new Calci();
+	static Calci_Application c=new Calci_Application();
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+    //Non-Static Method Calling To Static Main Method By Using A Object.(c)
+		c.isCalci();
+	}
+	protected  void isCalci() 
+	{
+		boolean app=true;
+		System.out.println();
+		System.out.println("!!!Welcome To Small Calculator App Perform Arethmatic Operation's!!!");
+		do
+		{
+			System.out.print("+");
+			System.out.print(" - ");
+			System.out.print(" * ");
+			System.out.print(" / ");
+			System.out.print(" C ");
+			System.out.print(" X ");
+			System.out.println();
+				switch (sc.next().charAt(0))
+				{
+				case 'C':
+					{
+						a.value=0;
+						System.out.println(a.value);
+					}
+				case '+':
+					{
+						System.out.println("Enter a Number:- ");
+						a.addition(sc.nextInt());
+						System.out.println(a.value);
+						break;
+					}
+				case '*':
+					{
+						System.out.println("Enter a Number:- ");
+						a.multiplication(sc.nextInt());
+						System.out.println(a.value);
+						break;
+					}
+				case '-':
+					{
+						System.out.println("Enter a Number:- ");
+						a.substraction(sc.nextInt());
+						System.out.println(a.value);
+						break;
+					}
+				case '/':
+					{
+						System.out.println("Enter a Number:- ");
+						a.division(sc.nextInt());
+						System.out.println(a.value);
+						break;
+					}
+				case 'X':
+					{
+						app=false;
+						break;
+					}
+				
+				}
+		}
+		while (app);
+	}
+}
