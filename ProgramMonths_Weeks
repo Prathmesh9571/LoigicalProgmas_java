@@ -1,0 +1,140 @@
+// Java Program is Design To Find A Exact Month From (January-December) given Exact Number of Month Also To Find A Exact Week From (Monday-Sunday) given Exact Number of Week.
+import java.util.Scanner;
+class _Month_Weeks
+{
+  public static void main(String[]args);
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter To Choose Weeks Or Months Press 1 For 'Weeks'|| Press 2 For Months:-");
+    int Num=sc.nextInt();
+    if (num==1||num==2)
+    {
+      switch(Num)
+      {
+        case 1:
+        {
+         System.out.println("Enter a Week Value From 1 to 7 To Get Exact Week You want :-");
+          int weeks=sc.nextInt();
+          switch(weeks)
+          {
+            case 1:
+            {
+              System.out.println("Monday");
+				      break;
+            } 
+            case 2:
+            {
+              System.out.println("Tuesday");
+		        	break;
+            }
+            case 3:
+            {
+              System.out.println("Wednesday");
+			        break;
+            }
+            case 4:
+            {
+              System.out.println("Thrusday");
+				      break;
+            }
+            case 5:
+            {
+              System.out.println("Friday");
+				      break;
+            }
+            case 6:
+            {
+              System.out.println("Saturday");
+				      break;
+            }
+            case 7:
+            {
+              System.out.println("Sunday");
+				      break;
+            }
+            default:
+            {
+              System.out.println("! Invalid Please Select a correct Week Option From 1 to 7");
+            }
+          }
+      }
+      case 2:
+      {
+      System.out.println("Enter a Month Value From 1 to 12 To Get Exact Month You want :-");
+      int Month=sc.nextInt();
+      switch(Month)
+    {
+       case 1:
+      {
+        System.out.println("January");
+		    break;
+      }
+      case 2:
+      {
+        System.out.println("February");
+		    break;
+      }
+      case 3:
+      {
+        System.out.println("March");
+		    break;
+      }
+      case 4:
+      {
+        System.out.println("April");
+		    break;
+      }
+      case 5:
+      {
+        System.out.println("May");
+		    break;
+      }
+      case 6:
+      {
+        System.out.println("June");
+		    break;
+      }
+      case 7:
+      {
+        System.out.println("Jully");
+		    break;
+      }
+      case 8:
+      {
+        System.out.println("August");
+		    break;
+      }
+      case 9:
+      {
+        System.out.println("September");
+		    break;
+      }
+      case 10:
+      {
+        System.out.println("October");
+		    break;
+      }
+      case 11:
+      {
+        System.out.println("November");
+		    break;
+      }
+      case 12:
+      {
+        System.out.println("December");
+		    break;
+      }
+        default:
+        {
+          System.out.println("! Invalid Please Enter a Valid Month");
+        }
+      }
+    }
+  }
+}
+    else
+    {
+	    System.out.println("! It's Invalid Please Enter a Correct one 1 For weeks and 2 For Months. ");  
+    }
+  }
+}
