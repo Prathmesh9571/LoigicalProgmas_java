@@ -1,0 +1,55 @@
+//These program is specifically design for take a data of students and Year If The Year is Leap Then Print All Data Of Students
+package ExtrawPrograms;
+public class Students_Class {
+String name;
+int marks;
+String BatchCode;
+Students_Class(String name,int marks,String BatchCode)
+{
+	this.name=name;
+	this.marks=marks;
+	this.BatchCode=BatchCode;
+}
+
+	public static void main(String[] args) {
+		Students_Class []ref1= new Students_Class[3];
+		Students_Class s1 = new  Students_Class("Prathmesh2001",90,"m3");
+		Students_Class s2 = new  Students_Class("sagar2004",35,"m3");
+		Students_Class s3 = new  Students_Class("suraj2000",50,"m3");
+		ref1[0]=s1;
+		ref1[1]=s2;
+		ref1[2]=s3;
+		s3.leapInfo(ref1);
+	}
+	public void  leapInfo(Students_Class[]arr)
+	{
+		
+		int d=arr[0].name.length(),e=arr[1].name.length(),f=arr[2].name.length();
+		int a =d-4,b=e-4,c=f-4;
+		String newstring=arr[0].name.substring(a);
+		String newstring1=arr[1].name.substring(b);
+		String newstring2=arr[2].name.substring(c);
+		
+		
+		//Converting the String
+		int year=new Integer(newstring);
+		int year1=new Integer(newstring1);
+		int year2=new Integer(newstring2);
+		
+		int arr1[]= {year,year1,year2};
+//		Check Year Leap or Not
+		for ( int i=0;i<arr1.length;i++)	
+		{	
+ // if (year) is Leap year Then Print all Data of students
+			 if ((arr1[i]% 400 == 0)||((arr1[i]% 4 == 0)&&(arr1[i] % 100 != 0)))
+			 {
+				 System.out.println("Leap year"+arr1[i]);
+				 System.out.println("Name:- "+arr[i].name+" Marks:- "+arr[i].marks+" Batch_Code:- "+arr[i].BatchCode);
+			 }
+			 else
+			 {
+				 System.out.println("Not-Leap year"+arr1[i]);
+			 }
+		}	
+	}
+}
